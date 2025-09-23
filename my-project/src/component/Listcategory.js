@@ -20,8 +20,8 @@ export default class ListCategories extends Component {
 
   // fungsi untuk pilih icon sesuai nama
   iconForCategory = (nama) => {
-    if (nama === "Makanan") return <FaUtensils className="me-2" />;
-    if (nama === "Minuman") return <FaCoffee className="me-2" />;
+    if (nama === "Tas Wanita") return <FaUtensils className="me-2" />;
+    if (nama === "Tas Pria") return <FaCoffee className="me-2" />;
     if (nama === "Cemilan") return <FaCookie className="me-2" />;
     return null;
   };
