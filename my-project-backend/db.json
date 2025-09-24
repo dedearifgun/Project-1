@@ -19,6 +19,7 @@
       "kode": "K-01",
       "nama": "Sate Ayam",
       "harga": 16000,
+      "stok": 14,
       "is_ready": true,
       "gambar": "sate-ayam.jpg",
       "category": {
@@ -31,6 +32,7 @@
       "kode": "K-02",
       "nama": "Nasi Goreng",
       "harga": 14000,
+      "stok": 22,
       "is_ready": true,
       "gambar": "nasi-goreng.jpg",
       "category": {
@@ -43,6 +45,7 @@
       "kode": "K-03",
       "nama": "Nasi Rames",
       "harga": 12000,
+      "stok": 16,
       "is_ready": true,
       "gambar": "nasi-rames.jpg",
       "category": {
@@ -53,10 +56,11 @@
     {
       "id": "4",
       "kode": "K-04",
-      "nama": "Lontong Kari",
+      "nama": "Paket 2",
       "harga": 18000,
+      "stok": 9,
       "is_ready": true,
-      "gambar": "lontong-kari.jpg",
+      "gambar": "paket-2.jpg",
       "category": {
         "id": 1,
         "nama": "Makanan"
@@ -67,6 +71,7 @@
       "kode": "K-05",
       "nama": "Mie Goreng",
       "harga": 13000,
+      "stok": 25,
       "is_ready": true,
       "gambar": "mie-goreng.jpg",
       "category": {
@@ -79,6 +84,7 @@
       "kode": "K-06",
       "nama": "Bakso",
       "harga": 10000,
+      "stok": 15,
       "is_ready": true,
       "gambar": "bakso.jpg",
       "category": {
@@ -91,6 +97,7 @@
       "kode": "K-07",
       "nama": "Mie Ayam Bakso",
       "harga": 14000,
+      "stok": 10,
       "is_ready": true,
       "gambar": "mie-ayam-bakso.jpg",
       "category": {
@@ -103,6 +110,7 @@
       "kode": "K-08",
       "nama": "Pangsit 6",
       "harga": 5000,
+      "stok": 18,
       "is_ready": true,
       "gambar": "pangsit.jpg",
       "category": {
@@ -115,6 +123,7 @@
       "kode": "K-09",
       "nama": "Kentang Goreng",
       "harga": 5000,
+      "stok": 22,
       "is_ready": true,
       "gambar": "kentang.jpg",
       "category": {
@@ -127,6 +136,7 @@
       "kode": "K-10",
       "nama": "Burger",
       "harga": 15000,
+      "stok": 8,
       "is_ready": true,
       "gambar": "burger.jpg",
       "category": {
@@ -139,6 +149,7 @@
       "kode": "K-11",
       "nama": "Coffe Late",
       "harga": 15000,
+      "stok": 16,
       "is_ready": true,
       "gambar": "coffe.jpg",
       "category": {
@@ -151,6 +162,7 @@
       "kode": "K-12",
       "nama": "Es Jeruk",
       "harga": 7000,
+      "stok": 25,
       "is_ready": true,
       "gambar": "esjeruk.jpg",
       "category": {
@@ -163,6 +175,7 @@
       "kode": "K-13",
       "nama": "Es Teh",
       "harga": 5000,
+      "stok": 48,
       "is_ready": true,
       "gambar": "esteh.jpg",
       "category": {
@@ -175,17 +188,44 @@
       "kode": "K-14",
       "nama": "Teh Hangat",
       "harga": 3000,
+      "stok": 40,
       "is_ready": true,
       "gambar": "teh.jpg",
       "category": {
         "id": 2,
         "nama": "Minuman"
       }
+    },
+    {
+      "id": "293c",
+      "kode": "F5",
+      "nama": "tas",
+      "harga": 1000,
+      "stok": 4,
+      "is_ready": true,
+      "gambar": "Screenshot_1.png",
+      "category": {
+        "id": "1",
+        "nama": "Makanan"
+      }
+    },
+    {
+      "id": "4070",
+      "kode": "ST-KL",
+      "nama": "Sate Kulit",
+      "harga": 5000,
+      "stok": 21,
+      "is_ready": true,
+      "gambar": "sate-kulit.jpg",
+      "category": {
+        "id": "1",
+        "nama": "Makanan"
+      }
     }
   ],
   "keranjangs": [
     {
-      "id": "0182",
+      "id": "cfe4",
       "jumlah": 1,
       "total_harga": 12000,
       "product": {
@@ -193,6 +233,7 @@
         "kode": "K-03",
         "nama": "Nasi Rames",
         "harga": 12000,
+        "stok": 17,
         "is_ready": true,
         "gambar": "nasi-rames.jpg",
         "category": {
@@ -202,7 +243,43 @@
       }
     },
     {
-      "id": "b2cb",
+      "id": "03ad",
+      "jumlah": 1,
+      "total_harga": 10000,
+      "product": {
+        "id": "6",
+        "kode": "K-06",
+        "nama": "Bakso",
+        "harga": 10000,
+        "stok": 16,
+        "is_ready": true,
+        "gambar": "bakso.jpg",
+        "category": {
+          "id": 1,
+          "nama": "Makanan"
+        }
+      }
+    },
+    {
+      "id": "22d3",
+      "jumlah": 1,
+      "total_harga": 1000,
+      "product": {
+        "id": "293c",
+        "kode": "F5",
+        "nama": "tas",
+        "harga": 1000,
+        "stok": 5,
+        "is_ready": true,
+        "gambar": "Screenshot_1.png",
+        "category": {
+          "id": "1",
+          "nama": "Makanan"
+        }
+      }
+    },
+    {
+      "id": "bf95",
       "jumlah": 1,
       "total_harga": 13000,
       "product": {
@@ -210,42 +287,9 @@
         "kode": "K-05",
         "nama": "Mie Goreng",
         "harga": 13000,
+        "stok": 26,
         "is_ready": true,
         "gambar": "mie-goreng.jpg",
-        "category": {
-          "id": 1,
-          "nama": "Makanan"
-        }
-      }
-    },
-    {
-      "id": "1d8d",
-      "jumlah": 1,
-      "total_harga": 16000,
-      "product": {
-        "id": "1",
-        "kode": "K-01",
-        "nama": "Sate Ayam",
-        "harga": 16000,
-        "is_ready": true,
-        "gambar": "sate-ayam.jpg",
-        "category": {
-          "id": 1,
-          "nama": "Makanan"
-        }
-      }
-    },
-    {
-      "id": "7395",
-      "jumlah": 1,
-      "total_harga": 14000,
-      "product": {
-        "id": "2",
-        "kode": "K-02",
-        "nama": "Nasi Goreng",
-        "harga": 14000,
-        "is_ready": true,
-        "gambar": "nasi-goreng.jpg",
         "category": {
           "id": 1,
           "nama": "Makanan"
@@ -255,27 +299,190 @@
   ],
   "pesanans": [
     {
-      "id": "78eb",
-      "total_bayar": 16000,
+      "id": "161a",
+      "total_bayar": 54000,
       "menus": [
         {
-          "id": "477d",
-          "jumlah": 1,
-          "total_harga": 16000,
+          "jumlah": 3,
+          "total_harga": 30000,
           "product": {
-            "id": "1",
-            "kode": "K-01",
-            "nama": "Sate Ayam",
-            "harga": 16000,
+            "id": "6",
+            "kode": "K-06",
+            "nama": "Bakso",
+            "harga": 10000,
+            "stok": 19,
             "is_ready": true,
-            "gambar": "sate-ayam.jpg",
+            "gambar": "bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": "37ca"
+        },
+        {
+          "jumlah": 2,
+          "total_harga": 24000,
+          "product": {
+            "id": "3",
+            "kode": "K-03",
+            "nama": "Nasi Rames",
+            "harga": 12000,
+            "stok": 19,
+            "is_ready": true,
+            "gambar": "nasi-rames.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": "0246"
+        }
+      ],
+      "tanggal": "2025-09-24T08:01:28.612Z",
+      "metode_pembayaran": "CASH",
+      "uang_dibayar": 60000,
+      "kembalian": 6000
+    },
+    {
+      "id": "2307",
+      "total_bayar": 12000,
+      "menus": [
+        {
+          "id": "aa88",
+          "jumlah": 1,
+          "total_harga": 12000,
+          "product": {
+            "id": "3",
+            "kode": "K-03",
+            "nama": "Nasi Rames",
+            "harga": 12000,
+            "stok": 18,
+            "is_ready": true,
+            "gambar": "nasi-rames.jpg",
             "category": {
               "id": 1,
               "nama": "Makanan"
             }
           }
         }
-      ]
+      ],
+      "tanggal": "2025-09-24T08:01:35.619Z",
+      "metode_pembayaran": "QRIS",
+      "uang_dibayar": 12000,
+      "kembalian": 0
+    },
+    {
+      "id": "c316",
+      "total_bayar": 14000,
+      "menus": [
+        {
+          "id": "17eb",
+          "jumlah": 1,
+          "total_harga": 14000,
+          "product": {
+            "id": "2",
+            "kode": "K-02",
+            "nama": "Nasi Goreng",
+            "harga": 14000,
+            "stok": 23,
+            "is_ready": true,
+            "gambar": "nasi-goreng.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          }
+        }
+      ],
+      "tanggal": "2025-09-24T08:01:45.395Z",
+      "metode_pembayaran": "TRANSFER",
+      "uang_dibayar": 14000,
+      "kembalian": 0
+    },
+    {
+      "id": "44c6",
+      "total_bayar": 30000,
+      "menus": [
+        {
+          "jumlah": 3,
+          "total_harga": 30000,
+          "product": {
+            "id": "6",
+            "kode": "K-06",
+            "nama": "Bakso",
+            "harga": 10000,
+            "stok": 17,
+            "is_ready": true,
+            "gambar": "bakso.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": "6bb7"
+        }
+      ],
+      "tanggal": "2025-09-24T08:04:33.308Z",
+      "metode_pembayaran": "QRIS",
+      "uang_dibayar": 30000,
+      "kembalian": 0
+    },
+    {
+      "id": "7271",
+      "total_bayar": 26000,
+      "menus": [
+        {
+          "jumlah": 2,
+          "total_harga": 26000,
+          "product": {
+            "id": "5",
+            "kode": "K-05",
+            "nama": "Mie Goreng",
+            "harga": 13000,
+            "stok": 27,
+            "is_ready": true,
+            "gambar": "mie-goreng.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": "d72a"
+        }
+      ],
+      "tanggal": "2025-09-24T08:04:50.915Z",
+      "metode_pembayaran": "QRIS",
+      "uang_dibayar": 26000,
+      "kembalian": 0
+    },
+    {
+      "id": "f2f2",
+      "total_bayar": 48000,
+      "menus": [
+        {
+          "jumlah": 3,
+          "total_harga": 48000,
+          "product": {
+            "id": "1",
+            "kode": "K-01",
+            "nama": "Sate Ayam",
+            "harga": 16000,
+            "stok": 15,
+            "is_ready": true,
+            "gambar": "sate-ayam.jpg",
+            "category": {
+              "id": 1,
+              "nama": "Makanan"
+            }
+          },
+          "id": "6629"
+        }
+      ],
+      "tanggal": "2025-09-24T08:05:05.411Z",
+      "metode_pembayaran": "QRIS",
+      "uang_dibayar": 48000,
+      "kembalian": 0
     }
   ]
 }

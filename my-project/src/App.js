@@ -164,20 +164,23 @@
 import React from "react";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import { NavbarComp } from "./component";
-import {Home} from "./pages";
-import { Sukses } from './pages';
+import {Home, Sukses} from "./pages";
+import Transaksi from "./pages/Transaksi"; // ✅ tambahkan ini
+import TambahProduk from "./pages/TambahProduk";
 
 
 function App() {
   return (
     <BrowserRouter>
       <NavbarComp />
-    <main>
-    <Switch>
-      <Route path="/" component={Home} exact/>
-      <Route path="/Sukses" component={Sukses} exact/>
-    </Switch>
-  </main>
+      <main>
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/Sukses" component={Sukses} exact />
+          <Route path="/Transaksi" component={Transaksi} exact />
+          <Route path="/TambahProduk" component={TambahProduk} exact /> 
+        </Switch>
+      </main>
     </BrowserRouter>
   );
 }
