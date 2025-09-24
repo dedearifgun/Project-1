@@ -1,51 +1,53 @@
 import React, { Component } from "react";
 import { Col, ListGroup } from "react-bootstrap";
+import axios from "axios";
 import { API_URL } from "../utils/constants";
-import { FaUtensils, FaCoffee, FaCookie } from "react-icons/fa"; // ✅ icon
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUtensils, faCoffee, faCheese } from "@fortawesome/free-solid-svg-icons";
 
-export default class ListCategories extends Component {
+const Icon =({nama}) =>{
+if(nama==="Makanan") return <FontAwesomeIcon icon={faUtensils} className="mr-2" />
+if(nama==="Minuman") return <FontAwesomeIcon icon={faCoffee}  />
+if(nama==="Cemilan") return <FontAwesomeIcon icon={faCheese} className="mr-2" />
+
+return <FontAwesomeIcon icon={faUtensils} className="mr-2" />
+}
+export default class ListCategory extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      categories: []
+      categories: [],
     };
   }
-
   componentDidMount() {
-    fetch(`${API_URL}/categories`)
-      .then((res) => res.json())
-      .then((data) => this.setState({ categories: data }))
-      .catch((err) => console.error("Error:", err));
+    axios
+      .get(API_URL + "categories")
+      .then((res) => {
+        const categories = res.data;
+        this.setState({ categories });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
   }
-
-  // fungsi untuk pilih icon sesuai nama
-  iconForCategory = (nama) => {
-    if (nama === "Tas Wanita") return <FaUtensils className="me-2" />;
-    if (nama === "Tas Pria") return <FaCoffee className="me-2" />;
-    if (nama === "Cemilan") return <FaCookie className="me-2" />;
-    return null;
-  };
-
   render() {
-    const { categories } = this.state;
-    const { changeCategory, kategoriAktif } = this.props;
-
+    const {categories}=this.state
+    const {changeCategory, categoriYangDipilih}=this.props
     return (
-      <Col md={3} className="mt-2">
-        <h5><strong>Daftar Kategori</strong></h5>
+      <Col md={2} mt="2">
+        <h5>
+          <strong>Daftar Kategori</strong>
+        </h5>
         <hr />
         <ListGroup>
-          {categories.map((cat) => (
-            <ListGroup.Item
-              key={cat.id}
-              action
-              onClick={() => changeCategory(cat.nama)}
-              active={kategoriAktif === cat.nama}
-            >
-              {this.iconForCategory(cat.nama)} {cat.nama}
-            </ListGroup.Item>
+          {categories && categories.map((category)=>(
+          <ListGroup.Item key={category.id} onClick={()=>changeCategory(category.nama)} className={categoriYangDipilih===category.nama && "category-aktif"} style={{cursor :'pointer'}
+
+          }><h5><Icon nama={category.nama}/> {category.nama}</h5></ListGroup.Item>
           ))}
         </ListGroup>
+        
       </Col>
     );
   }
