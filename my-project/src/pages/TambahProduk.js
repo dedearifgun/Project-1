@@ -113,7 +113,7 @@ function TambahProduk({ history }) {
             accept="image/*"
             onChange={handleFileChange}
           />
-          {gambar && (
+          {gambar & (
             <small className="text-success">
               Gambar dipilih: {gambar} (copy file ke folder <b>/public/images</b>)
             </small>
@@ -129,7 +129,7 @@ function TambahProduk({ history }) {
             <option value="">Pilih Kategori</option>
             {categories.map((c) => (
               <option key={c.id} value={c.id}>
-                {c.nama}
+                {nama}
               </option>
             ))}
           </Form.Select>

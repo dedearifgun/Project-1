@@ -1,14 +1,14 @@
-import React from 'react'
-import { Col, Card } from "react-bootstrap"
-import { numberWithCommas } from '../utils/utils'
+import React from "react";
+import { Col, Card } from "react-bootstrap";
+import { numberWithCommas } from "../utils/utils";
 
 const Menus = ({ menu, masukkeranjang }) => {
   return (
-    <Col md={4} xs={6} className='mb-4'>
+    <Col md={4} xs={6} className="mb-4">
       <Card
         className="shadow"
         onClick={() => masukkeranjang(menu)}
-        style={{ width: '18rem', cursor: 'pointer' }}
+        style={{ width: "18rem", cursor: "pointer" }}
       >
         <Card.Img
           variant="top"
@@ -20,12 +20,12 @@ const Menus = ({ menu, masukkeranjang }) => {
           </Card.Title>
           <Card.Text>
             Rp. {numberWithCommas(menu.harga)} <br />
-            <small>Stok: {menu.stok}</small> {/* ✅ tampilkan stok */}
+            <small>Stok: {menu.stok ?? 0}</small>
           </Card.Text>
         </Card.Body>
       </Card>
     </Col>
-  )
-}
+  );
+};
 
-export default Menus
+export default Menus;

@@ -1,5 +1,5 @@
 import Home from "./Home";
-import Sukses from "./Sukses";
 import Transaksi from "./Transaksi";
+import Stock from "./Stock";
 
-export {Home, Sukses }
+export { Home, Transaksi, Stock };
